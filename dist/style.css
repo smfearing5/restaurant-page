@@ -1,9 +1,32 @@
-body {
-    display: grid;
+:root {
+    --navy: #105;
+    --cyan: #3ad;
 }
 
-header {
+* {
+    margin: 0;
+}
+
+body {
+    display: grid;
+    background-color: var(--navy);
+}
+
+header,
+#content,
+.section {
     display: flex;
+}
+
+#content, 
+.section {
+    flex-direction: column;
+    align-items: center;
+}
+
+h2, h3, h4,
+.quoter {
+    font-weight: 900;
 }
 
 header {
@@ -13,4 +36,33 @@ header {
 
 header > button {
     border: 1px solid red;
+}
+
+h2.section {
+    text-align: center;
+    width: 60%;
+}
+
+.section {
+    background-color: var(--cyan);
+    margin: 1rem;
+    padding: 1rem;
+    width: 50%;
+}
+
+.section > h4 {
+    align-self: flex-start;
+}
+
+.section > p {
+    text-align: center;
+}
+
+.quoter {
+    align-self: flex-end;
+}
+
+table {
+    width: 60%;
+    text-align: left;
 }
