@@ -1,4 +1,5 @@
 import homeScript from "./home";
+import menuScript from "./menu";
 
 let navbar = (() => {
     const homeTab = document.getElementById("home-tab");
@@ -17,7 +18,7 @@ let navbar = (() => {
     update(homeScript);
 
     homeTab.addEventListener("click", () => update(homeScript));
-    menuTab.addEventListener("click", () => update());
+    menuTab.addEventListener("click", () => update(menuScript));
     contactTab.addEventListener("click", () => update());
 
     return {};

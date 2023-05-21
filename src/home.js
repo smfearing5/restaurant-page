@@ -53,8 +53,6 @@ export default function homeScript(content) {
         hoursTable.appendChild(row);
 
         let dayRow = (day, open, close) => {
-            let row, item;
-
             row = document.createElement("tr");
 
             item = document.createElement("th");

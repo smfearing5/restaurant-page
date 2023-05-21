@@ -14,19 +14,40 @@ body {
 
 header,
 #content,
-.section {
+.section,
+.cardDesc,
+.cardLabel {
     display: flex;
 }
 
 #content, 
-.section {
+.section,
+.cardDesc {
     flex-direction: column;
     align-items: center;
+}
+
+.section.card {
+    flex-direction: row;
+}
+
+.cardLabel {
+    width: 100%;
+    justify-content: space-between;
+}
+
+.cardDesc {
+    height: 100%;
+    justify-content: space-evenly;
 }
 
 h2, h3, h4,
 .quoter {
     font-weight: 900;
+}
+
+h5 {
+    font-size: 1rem;
 }
 
 header {
@@ -38,8 +59,16 @@ header > button {
     border: 1px solid red;
 }
 
-h2.section {
+h2.section,
+h3.section {
     text-align: center;
+}
+
+h2.section {
+    width: 70%;
+}
+
+h3.section {
     width: 60%;
 }
 
